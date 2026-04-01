@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <section class='home'>
+                <h3>HOME</h3>
+                <div class='score-square' id='home'></div>
+                <section>
+                    <button class='score-btn' 
+                            onclick='updateHomeScore(1)'
+                            aria-label="add 1 point to home score">
+                            +1
+                            </button>
+                    <button class='score-btn' 
+                            onclick='updateHomeScore(2)'
+                            aria-label="add 2 points to home score">
+                            +2
+                            </button>
+                    <button class='score-btn' 
+                            onclick='updateHomeScore(3)'
+                            aria-label="add 3 points to home score">
+                            +3
+                            </button>
+                </section>
+                
+                <section>
+                    <button class='score-btn' 
+                            onclick='updateHomeScore(-1)'
+                            id='btn-one'
+                            aria-label="subtract 1 point from home score"
+                            disabled>-1
+                    </button>
+                    <button class='score-btn' 
+                            onclick='updateHomeScore(-2)' 
+                            id='btn-two'
+                            aria-label="subtract 2 points from home score" 
+                            disabled>-2
+                    </button>
+                    <button class='score-btn' 
+                            onclick='updateHomeScore(-3)' 
+                            id='btn-three'
+                            aria-label="subtract 3 points from home score" 
+                            disabled>-3
+                    </button>
+                </section>
+            </section>
+            
+            <section>
+                <button class='reset-btn'
+                        onclick='reset()'>RESET</button>
+            </section>
+            
+            <section class='visitor'>
+                <h3>GUEST</h3>
+                <div class='score-square' id='visitor'></div>
+                <section>
+                    <button class='score-btn'
+                            onclick='updateVisitorScore(1)'
+                            aria-label="add 1 point to visitor score">
+                            +1
+                    </button>
+                    <button class='score-btn'
+                            onclick='updateVisitorScore(2)'
+                            aria-label="add 2 points to visitor score">
+                            +2
+                    </button>
+                    <button class='score-btn'
+                            onclick='updateVisitorScore(3)'
+                            aria-label="add 3 points to visitor score">
+                            +3
+                    </button>
+                </section>
+                <section>
+                    <button class='score-btn'
+                            onclick='updateVisitorScore(-1)' 
+                            id='btn-vis-one'
+                            aria-label="subtract 1 point from visitor score" 
+                            disabled>-1
+                    </button>
+                    <button class='score-btn'
+                            onclick='updateVisitorScore(-2)' 
+                            id='btn-vis-two'
+                            aria-label="subtract 2 points from visitor score" 
+                            disabled>-2
+                    </button>
+                    <button class='score-btn'
+                            onclick='updateVisitorScore(-3)' 
+                            id='btn-vis-three'
+                            aria-label="subtract 3 points from visitor score" 
+                            disabled>-3
+                    </button>
+                </section>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
