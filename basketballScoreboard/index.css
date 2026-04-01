@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Score';
+    src: url('./scoreFont.ttf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 40px;
+    color: #EEEEEE;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;;
+    max-width: 575px;
+    width: 100%;
+    background-color: #1B244A;
+    margin-top: 80px;
+    padding-bottom: 55px;
+}
+
+.score-square {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 120px;
+    font-family: 'Score';
+    font-size: 75px;
+    color: #F94F6D;
+    background-color: #080001;
+    border-radius: 5px;
+    padding: 20px 0 10px 0;
+    margin-top: -25px;
+}
+
+.score-btn {
+    width: 45px;
+    height: 45px;
+    font-family: 'Score';
+    font-size: 18px;
+    color: #9AABD8;
+    background-color: transparent;
+    border: 1px solid #9AABD8;
+    border-radius: 5PX;
+    transition-duration: 0.5s;
+}
+
+.reset-btn {
+    width: 100px;
+    height: 50px;
+    font-family: 'Score';
+    font-size: 22px;
+    color: #9AABD8;
+    background-color: transparent;
+    border: 1px solid #9AABD8;
+    border-radius: 5PX;
+    transition-duration: 0.5s;
+    padding-top: 8px;
+}
+
+.winning {
+    border: 8px solid greenyellow;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.home, .visitor {
+    text-align: center;
+}
+
+.score-btn:focus {
+    outline: none;
+}
+
+.reset-btn:focus {
+    outline: none;
+}
+
+.score-btn:hover {
+    color: #1B244A;
+    background-color: #9AABD8;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    color: #1B244A;
+    background-color: #9AABD8;
+    cursor: pointer;
+}
